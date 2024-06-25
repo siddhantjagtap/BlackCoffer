@@ -1,4 +1,5 @@
 const Json = require('./json.model');
+
 const api = async (req, res) => {
   try {
     const insights = await Json.find();
@@ -7,6 +8,5 @@ const api = async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 };
-
 
 module.exports = {api};

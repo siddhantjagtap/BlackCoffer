@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 const URI = process.env.MONGO_URL;
-const {api} = require('./json')
+const {api} = require('./json');
 
 mongoose
   .connect("mongodb+srv://jagtapsiddhant35:P0jsNGLr8O66iXp4@blackcoffer.o5zbwu8.mongodb.net/BlackCoffer")
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
     res.json('Hello, Backend Readyyyy!!! ');
   });
 
-app.get('/api/json',api );
+app.get('/api/json', api );
 
 const PORT = 5000; 
 
