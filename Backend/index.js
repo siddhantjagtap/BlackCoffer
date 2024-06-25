@@ -7,7 +7,7 @@ const URI = process.env.MONGO_URL;
 const {api} = require('./json');
 
 mongoose
-  .connect("mongodb+srv://jagtapsiddhant35:P0jsNGLr8O66iXp4@blackcoffer.o5zbwu8.mongodb.net/BlackCoffer")
+  .connect(URI)
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
