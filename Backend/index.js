@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
   });
 
 const Json = require('./json');
-app.use('/api/json', Json);
+app.use('/json', Json);
 
 const PORT = 5000; 
 
