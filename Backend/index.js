@@ -6,7 +6,7 @@ const app = express();
 const URI = process.env.MONGO_URL;
 
 mongoose
-  .connect(URI)
+  .connect("mongodb+srv://jagtapsiddhant35:P0jsNGLr8O66iXp4@blackcoffer.o5zbwu8.mongodb.net/BlackCoffer")
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
